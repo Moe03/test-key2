@@ -1,0 +1,6 @@
+curl https://api.anthropic.com/v1/messages \
+  --header "x-api-key: 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" \
+  --header "anthropic-version: 2023-06-01" \
+  --header "content-type: application/json" \
+  --data '{"model": "claude-opus-5-5", "max_tokens": 1024,
+    "messages": [{"role": "user", "content": "Hello, world"}]}'
